@@ -2,17 +2,18 @@
   "name": "forkify",
   "version": "1.0.0",
   "description": "forkify project",
-  "main": "index.js",
+  "main": "src/js/index.js",
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --open"
+    "start": "webpack-dev-server --mode development --open && node server.js"
   },
   "author": "Yash Kadam",
   "license": "ISC",
   "dependencies": {
     "@babel/polyfill": "^7.11.5",
     "axios": "^0.19.2",
+    "express": "^4.17.1",
     "fractional": "^1.0.0",
     "html-webpack-plugin": "^3.2.0",
     "uniqid": "^5.2.0",
